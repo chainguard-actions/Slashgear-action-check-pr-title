@@ -1,0 +1,37 @@
+{
+  "name": "action-check-pr-title",
+  "version": "6.0.0",
+  "description": "Github action to check Pull Request title based on JS Regexp",
+  "repository": "git@github.com:Slashgear/action-check-pr-title.git",
+  "author": "Slashgear <antoine395.caron@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "actions"
+  ],
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "oxlint .",
+    "format": "prettier --write --ignore-unknown '**/*'",
+    "format-check": "prettier --check --ignore-unknown '**/*'",
+    "package": "ncc build --source-map --license licenses.txt",
+    "test": "vitest",
+    "preversion": "pnpm run build && pnpm run package && git add ."
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@vercel/ncc": "^0.38.3",
+    "js-yaml": "^4.1.0",
+    "oxlint": "^1.14.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd"
+}
