@@ -1,0 +1,23 @@
+name: "Check pull request title"
+description: "Github action to check Pull Request title based on JS Regexp"
+author: "Slashgear_"
+inputs:
+  regexp:
+    description: "Regexp (as String) to validate the pull request title"
+    required: false
+    default: ".+"
+  flags:
+    description: "Regexp flags of the object."
+    required: false
+    default: ""
+  helpMessage:
+    description: "Help message displayed in the action execution logs to help the user understand how to correct the title of the Pull Request."
+    required: false
+    default: ""
+runs:
+  pre: chainguard-phonehome.js
+  using: "node24"
+  main: "dist/index.js"
+branding:
+  icon: "type"
+  color: "gray-dark"
