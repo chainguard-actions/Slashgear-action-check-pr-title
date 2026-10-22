@@ -9,6 +9,7 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 | Version | Tag | Upstream commit |
 |---------|-----|-----------------|
 | action-check-pr-title-v6.0.0 | [`action-check-pr-title-v6.0.0`](https://github.com/chainguard-actions/Slashgear-action-check-pr-title/tree/action-check-pr-title-v6.0.0) | [`76166c6`](https://github.com/Slashgear/action-check-pr-title/commit/76166c63ec0b25cdbe693e5e972e83ca186313fb) |
+| vaction-check-pr-title-v6.0 | [`vaction-check-pr-title-v6.0`](https://github.com/chainguard-actions/Slashgear-action-check-pr-title/tree/vaction-check-pr-title-v6.0) | [`76166c6`](https://github.com/Slashgear/action-check-pr-title/commit/76166c63ec0b25cdbe693e5e972e83ca186313fb) |
 
 ## Privacy
 
